@@ -7,10 +7,9 @@ import {
 import { CommandConfig } from "../typings/types";
 import glob from "glob";
 import { promisify } from "util";
-import { RegisterCommandsOptions } from "../typings/types";
+import { RegisterCommandsOptions } from "./types";
 import { Event } from "./Event";
 import { config } from '../config'
-import { Database } from "./Database";
 import 'dotenv/config';
 
 const globPromise = promisify(glob);
@@ -27,7 +26,6 @@ export class ExtendedClient extends Client {
     start() {
         this.registerModules();
         this.login(process.env.botToken);
-        new Database().connect();
     }
     async importFile(filePath: string) {
         return (await import(filePath))?.default;
