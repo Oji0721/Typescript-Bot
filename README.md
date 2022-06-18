@@ -54,7 +54,7 @@ Just message me on GitHub
 ```js
 import { Command } from '../../structures/Command';
 
-export default = new Command({
+export default new Command({
   name: '',
   description: '',
   type: 'ChatInput',
@@ -70,7 +70,7 @@ export default = new Command({
 ```ts
 import { Event } from "../structures/Event";
 
-export default = new Event('EVENT-NAME', async (...args) => {
+export default new Event('EVENT-NAME', async (...args) => {
   // code
 })
 ```
