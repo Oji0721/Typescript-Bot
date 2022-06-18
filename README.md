@@ -77,6 +77,6 @@ export default = new Event('EVENT-NAME', async (...args) => {
 
 ## License
 
-[ISC LICENSE]((https://choosealicense.com/licenses/isc/))
+[ISC LICENSE](https://choosealicense.com/licenses/isc/)
 
 # Thanks For Using My Handler Please Give a Star
