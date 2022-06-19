@@ -1,6 +1,6 @@
 import("dotenv/config");
 import { ExtendedClient } from "./structures/Client";
-import { Database } from './structures/type';
+import { Database } from './structures/types';
 
 export const client = new ExtendedClient();
 export const db = new Database();
